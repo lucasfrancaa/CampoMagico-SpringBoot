@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+<head>
+<meta charset="UTF-8" />
+<title>Sistema de Gestão da Campo Mágico</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+	
+	<div class="container my-2">
+	<h4>Olá, bem vindo(a) ao sistema de gestão de pessoas da Campo Mágico!</h4>
+	<h6>Escolha uma das opções abixo</h6>
+		<a th:href="@{/sistema/cargos}" class="btn btn-primary btn-sm mb-3" style="background-color: #993399; border-color:#993399;" >Cargo</a>
+		<a th:href="@{/sistema/funcionarios}" class="btn btn-primary btn-sm mb-3" style="background-color: #993399; border-color:#993399;" >Funcionário</a>
+	</div>
+	
+</body>
+</html>
